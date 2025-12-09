@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Latihan JavaScript Dasar</title>
+</head>
+<body>
+
+  <h2>1. Menampilkan teks ke halaman web</h2>
+  <p id="contoh1"></p>
+
+  <hr>
+
+  <h2>2. Menampilkan pop-up alert</h2>
+  <button onclick="contohAlert()">Klik untuk munculkan alert</button>
+
+  <hr>
+
+  <h2>3. Menampilkan variabel di console</h2>
+  <p>Buka <strong>Inspect → Console</strong> untuk melihat output.</p>
+
+  <hr>
+
+  <h2>4. Membuat fungsi dan memanggilnya</h2>
+  <button onclick="contohFungsi()">Panggil fungsi salam</button>
+
+  <hr>
+
+  <h2>5. Event Handling (Klik tombol ubah teks & warna)</h2>
+  <p id="contoh5">Teks ini akan berubah</p>
+  <button onclick="ubahTeks()">Ubah teks</button>
+
+  <script>
+
+    // 1. Menampilkan teks ke halaman
+    document.getElementById("contoh1").innerHTML = "Halo! Ini teks dari JavaScript.";
+
+    // 2. Menampilkan pop-up alert
+    function contohAlert() {
+      alert("Ini alert dari JavaScript!");
+    }
+
+    // 3. Menampilkan variabel ke console
+    let nama = "Nevityas";
+    console.log("Nama: " + nama);
+
+    // 4. Membuat fungsi dan memanggilnya
+    function contohFungsi() {
+      alert("Halo, selamat belajar JavaScript!");
+    }
+
+    // 5. Event Handling - ubah teks dan style
+    function ubahTeks() {
+      let el = document.getElementById("contoh5");
+      el.innerHTML = "Teks sudah berubah!";
+      el.style.color = "red";
+    }
+
+  </script>
+
+</body>
+</html>
